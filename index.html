@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Car with canvas</title>
+  </head>
+  
+  <body onload="init();">
+    
+    <canvas id="myCanvasCar" width="1450" height="600">
+    </canvas>
+    
+    <p>
+    <button onclick="start()">START ANIMATION</button>
+    <button onclick="stop()">STOP ANIMATION</button>
+    </p>
+    
+    <p> 
+     <label for="color">Change color of the car</label>
+     <input type="color" id="color" value="#0000FF" oninput="changeColor();">
+    </p>  
+    
+     <p>
+     <label for="colorDoors">Change color of the doors</label>
+     <input type="color" id="colorDoors" value="#00008B"  oninput="changeColorDoors();">
+       <!--Para que aparezca el color del carro en el input type color, debo usar el hex code del color que tiene el carro, si escribo "blue, aparecera negro-->
+    </p>
+
+  
+    
+  </body>
+  </html>
+
+  <script src="script.js"></script>
